@@ -33,6 +33,105 @@ function portafolio_customize_register( $wp_customize ) {
 			'label' => __( 'Bio' )
 		)
 	);
+
+	/**
+	 * Social media links
+	*/
+
+	/* LinkedIn */
+	$wp_customize->add_setting (
+		'portafolio_linkedin_url',
+		array (
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'default' => '',
+			'transport' => 'refresh',
+			'sanitaize_callback' => '',
+		)
+	);
+	$wp_customize->add_control(
+		'portafolio_linkedin_url',
+		array(
+			'type' => 'text',
+			'priority' => 0,
+			'section' => 'portafolio_social_media_links',
+			'label' => __( 'LinkedIn URL')
+		)
+	);
+
+	/* AngelList */
+	$wp_customize->add_setting (
+		'portafolio_angellist_url',
+		array (
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'default' => '',
+			'transport' => 'refresh',
+			'sanitaize_callback' => '',
+		)
+	);
+	$wp_customize->add_control(
+		'portafolio_angellist_url',
+		array(
+			'type' => 'text',
+			'priority' => 1,
+			'section' => 'portafolio_social_media_links',
+			'label' => __( 'AngelList URL')
+		)
+	);
+
+	/* GitHub */
+	$wp_customize->add_setting (
+		'portafolio_github_url',
+		array (
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'default' => '',
+			'transport' => 'refresh',
+			'sanitaize_callback' => '',
+		)
+	);
+	$wp_customize->add_control(
+		'portafolio_github_url',
+		array(
+			'type' => 'text',
+			'priority' => 2,
+			'section' => 'portafolio_social_media_links',
+			'label' => __( 'GitHub URL')
+		)
+	);
+
+	/* Twitter */
+	$wp_customize->add_setting (
+		'portafolio_twitter_url',
+		array (
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'default' => '',
+			'transport' => 'refresh',
+			'sanitaize_callback' => '',
+		)
+	);
+	$wp_customize->add_control(
+		'portafolio_twitter_url',
+		array(
+			'type' => 'text',
+			'priority' => 3,
+			'section' => 'portafolio_social_media_links',
+			'label' => __( 'Twitter URL')
+		)
+	);
+
+	/* Social media links customizer section */
+	$wp_customize->add_section( 
+		'portafolio_social_media_links',
+		array (
+			'title' => __( 'Social Media Links'),
+			'description' => __( 'Add links to your social media accounts.'),
+			'priority' => 20,
+			'capability' => 'edit_theme_options',
+		)
+	);
 }
 add_action( 'customize_register', 'portafolio_customize_register' );
 

@@ -46,12 +46,36 @@
 			<?php
 			endif;  ?>
 
+			<?php
+			$linkedin_url = get_theme_mod( 'portafolio_linkedin_url');
+			$angellist_url = get_theme_mod( 'portafolio_angellist_url');
+			$github_url = get_theme_mod( 'portafolio_github_url');
+			$twitter_url = get_theme_mod( 'portafolio_twitter_url');
+			if ( $linkedin_url || $angellist_url || $github_url || $twitter_url ) : ?>
 			<div class="social-media-links">
-				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" alt="Linked In">
-				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/angellist.svg" alt="AngelList">
-				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/github.svg" alt="GitHub">
-				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" alt="Twitter">
+				<?php if ( $linkedin_url ) : ?>
+					<a href= "<?php echo $linkedin_url; ?>" target="_blank">
+						<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" alt="Linked In">
+					</a>
+				<?php endif; ?>
+				<?php if ( $angellist_url ) : ?>
+					<a href= "<?php echo $angellist_url; ?>" target="_blank">
+						<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/angellist.svg" alt="AngelList">
+					</a>
+				<?php endif; ?>
+				<?php if ( $github_url ) : ?>
+					<a href= "<?php echo $github_url; ?>" target="_blank">
+						<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/github.svg" alt="GitHub">
+					</a>
+				<?php endif; ?>
+				<?php if ( $twitter_url ) : ?>
+					<a href= "<?php echo $twitter_url; ?>" target="_blank">
+						<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" alt="Twitter">
+					</a>
+				<?php endif; ?>
 			</div>
+			<?php 
+			endif; ?>
 
 		</div><!-- .site-branding -->
 
