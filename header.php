@@ -52,7 +52,7 @@
 			$github_url = get_theme_mod( 'portafolio_github_url');
 			$twitter_url = get_theme_mod( 'portafolio_twitter_url'); ?>
 			<div class="bio-drawer-footer">
-				<img class="icon toggle-bio" src="<?php bloginfo('stylesheet_directory'); ?>/images/toggle.svg" alt="Linked In">
+				<div class= "icon toggle-bio bio-closed"></div>
 				<?php if ( $linkedin_url ) : ?>
 					<a href= "<?php echo $linkedin_url; ?>" target="_blank">
 						<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" alt="Linked In">

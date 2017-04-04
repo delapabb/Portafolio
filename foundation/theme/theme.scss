@@ -47,8 +47,22 @@
   }
 }
 
-/* Social Media Links */
+/* Site Branding Footer */
 
 .bio-drawer-footer {
   margin:0.25rem 0rem 1rem 0rem;
+  .toggle-bio {
+    background:$black;
+    background-image: url(images/toggle-closed.svg);
+    margin-bottom:-11px;
+    display:inline-block;
+    height:32px;
+    width:32px;
+  }
+  .toggle-bio.bio-closed {
+    background-image: url(images/toggle-closed.svg);
+  }
+  .toggle-bio.bio-open {
+    background-image: url(images/toggle-open.svg);
+  }
 }
