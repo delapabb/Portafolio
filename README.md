@@ -1,3 +1,4 @@
-#Portafolio
+Portafolio
+==========
 
 A WordPress Portfolio Theme
