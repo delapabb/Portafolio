@@ -2981,6 +2981,7 @@ select[multiple] {
 
 .site-description {
   margin: 0;
+  max-width: 26.25rem;
   font-size: 1rem;
   font-weight: 400;
   text-transform: capitalize;
@@ -2989,6 +2990,7 @@ select[multiple] {
 @media print, screen and (min-width: 40em) {
   .site-description {
     margin: 0 0 0.25rem 0;
+    max-width: 35rem;
     font-size: 1.5rem;
     line-height: 2rem;
   }
