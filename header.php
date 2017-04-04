@@ -38,6 +38,14 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
+
+			<?php
+			$bio = get_theme_mod( 'portafolio_bio_text' ); 
+			if ( $bio || is_customize_preview() ) : ?>
+				<p class="bio"><?php echo $bio; ?></p>
+			<?php
+			endif;  ?>
+
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
