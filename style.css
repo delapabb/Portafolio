@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i");
 /*
 Theme Name: Portafolio
 Theme URI: http://underscores.me/
@@ -510,12 +511,10 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   line-height: 1.5;
   color: #0a0a0a;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -1708,7 +1707,7 @@ i {
 
 strong,
 b {
-  font-weight: bold;
+  font-weight: 400;
   line-height: inherit;
 }
 
@@ -1723,9 +1722,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   color: inherit;
   text-rendering: optimizeLegibility;
 }
@@ -1861,7 +1860,7 @@ dl {
 
 dl dt {
   margin-bottom: 0.3rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 blockquote {
@@ -1900,7 +1899,7 @@ code {
   border: 1px solid #cacaca;
   background-color: #e6e6e6;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: normal;
+  font-weight: 300;
   color: #0a0a0a;
 }
 
@@ -1915,7 +1914,7 @@ kbd {
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.4;
   color: #8a8a8a;
 }
@@ -2347,7 +2346,7 @@ textarea {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   font-family: inherit;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 300;
   color: #0a0a0a;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   -webkit-appearance: none;
@@ -2439,7 +2438,7 @@ label {
   display: block;
   margin: 0;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.8;
   color: #0a0a0a;
 }
@@ -2627,7 +2626,7 @@ select[multiple] {
   margin-top: -0.5rem;
   margin-bottom: 1rem;
   font-size: 0.75rem;
-  font-weight: bold;
+  font-weight: 400;
   color: #cc4b37;
 }
 
