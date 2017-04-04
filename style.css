@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Catamaran:900");
-@import url("https://fonts.googleapis.com/css?family=Biryani:300,400");
+@import url("https://fonts.googleapis.com/css?family=Biryani:200,400");
 /*
 Theme Name: Portafolio
 Theme URI: http://underscores.me/
@@ -513,9 +513,9 @@ body {
   padding: 0;
   background: #ffffff;
   font-family: "Biryani", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.5;
-  color: #333333;
+  color: #444444;
 }
 
 img {
@@ -1725,7 +1725,7 @@ h5,
 h6 {
   font-family: "Biryani", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   color: inherit;
   text-rendering: optimizeLegibility;
 }
@@ -1886,8 +1886,8 @@ cite:before {
 }
 
 abbr {
-  border-bottom: 1px dotted #333333;
-  color: #333333;
+  border-bottom: 1px dotted #444444;
+  color: #444444;
   cursor: help;
 }
 
@@ -1900,8 +1900,8 @@ code {
   border: 1px solid #cacaca;
   background-color: #e6e6e6;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: 300;
-  color: #333333;
+  font-weight: 200;
+  color: #444444;
 }
 
 kbd {
@@ -1909,13 +1909,13 @@ kbd {
   padding: 0.125rem 0.25rem 0;
   background-color: #e6e6e6;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  color: #333333;
+  color: #444444;
 }
 
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.4;
   color: #999999;
 }
@@ -2115,12 +2115,12 @@ p + .stat {
 
 .button.primary {
   background-color: #0095ff;
-  color: #333333;
+  color: #ffffff;
 }
 
 .button.primary:hover, .button.primary:focus {
   background-color: #0077cc;
-  color: #333333;
+  color: #ffffff;
 }
 
 .button.secondary {
@@ -2135,22 +2135,22 @@ p + .stat {
 
 .button.success {
   background-color: #3adb76;
-  color: #333333;
+  color: #444444;
 }
 
 .button.success:hover, .button.success:focus {
   background-color: #22bb5b;
-  color: #333333;
+  color: #444444;
 }
 
 .button.warning {
   background-color: #ffae00;
-  color: #333333;
+  color: #444444;
 }
 
 .button.warning:hover, .button.warning:focus {
   background-color: #cc8b00;
-  color: #333333;
+  color: #444444;
 }
 
 .button.alert {
@@ -2244,7 +2244,7 @@ p + .stat {
 
 .button.disabled.primary, .button.disabled.primary:hover, .button.disabled.primary:focus, .button[disabled].primary, .button[disabled].primary:hover, .button[disabled].primary:focus {
   background-color: #0095ff;
-  color: #333333;
+  color: #ffffff;
 }
 
 .button.disabled.secondary, .button[disabled].secondary {
@@ -2264,7 +2264,7 @@ p + .stat {
 
 .button.disabled.success, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success, .button[disabled].success:hover, .button[disabled].success:focus {
   background-color: #3adb76;
-  color: #333333;
+  color: #444444;
 }
 
 .button.disabled.warning, .button[disabled].warning {
@@ -2274,7 +2274,7 @@ p + .stat {
 
 .button.disabled.warning, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning, .button[disabled].warning:hover, .button[disabled].warning:focus {
   background-color: #ffae00;
-  color: #333333;
+  color: #444444;
 }
 
 .button.disabled.alert, .button[disabled].alert {
@@ -2344,11 +2344,11 @@ textarea {
   border: 1px solid #cacaca;
   border-radius: 0;
   background-color: #ffffff;
-  box-shadow: inset 0 1px 2px rgba(51, 51, 51, 0.1);
+  box-shadow: inset 0 1px 2px rgba(68, 68, 68, 0.1);
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 300;
-  color: #333333;
+  font-weight: 200;
+  color: #444444;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -2439,9 +2439,9 @@ label {
   display: block;
   margin: 0;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.8;
-  color: #333333;
+  color: #444444;
 }
 
 label.middle {
@@ -2453,7 +2453,7 @@ label.middle {
   margin-top: -0.5rem;
   font-size: 0.8125rem;
   font-style: italic;
-  color: #333333;
+  color: #444444;
 }
 
 .input-group {
@@ -2484,7 +2484,7 @@ label.middle {
   padding: 0 1rem;
   border: 1px solid #cacaca;
   background: #e6e6e6;
-  color: #333333;
+  color: #444444;
   text-align: center;
   white-space: nowrap;
   width: 1%;
@@ -2563,7 +2563,7 @@ select {
   font-family: inherit;
   font-size: 1rem;
   line-height: normal;
-  color: #333333;
+  color: #444444;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28153, 153, 153%29'></polygon></svg>");
   background-origin: content-box;
   background-position: right -1rem center;
@@ -2736,12 +2736,12 @@ select[multiple] {
 
 .button-group.primary .button {
   background-color: #0095ff;
-  color: #333333;
+  color: #ffffff;
 }
 
 .button-group.primary .button:hover, .button-group.primary .button:focus {
   background-color: #0077cc;
-  color: #333333;
+  color: #ffffff;
 }
 
 .button-group.secondary .button {
@@ -2756,22 +2756,22 @@ select[multiple] {
 
 .button-group.success .button {
   background-color: #3adb76;
-  color: #333333;
+  color: #444444;
 }
 
 .button-group.success .button:hover, .button-group.success .button:focus {
   background-color: #22bb5b;
-  color: #333333;
+  color: #444444;
 }
 
 .button-group.warning .button {
   background-color: #ffae00;
-  color: #333333;
+  color: #444444;
 }
 
 .button-group.warning .button:hover, .button-group.warning .button:focus {
   background-color: #cc8b00;
-  color: #333333;
+  color: #444444;
 }
 
 .button-group.alert .button {
@@ -2970,9 +2970,14 @@ select[multiple] {
   margin: 1rem 0 0 0;
   padding: 0;
   font-family: 'Catamaran', sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 900;
   line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.site-title a {
+  color: #444444;
 }
 
 @media print, screen and (min-width: 40em) {
