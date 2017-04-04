@@ -46,7 +46,7 @@ function portafolio_customize_register( $wp_customize ) {
 			'capability' => 'edit_theme_options',
 			'default' => '',
 			'transport' => 'refresh',
-			'sanitaize_callback' => '',
+			'sanitaize_callback' => 'clean_url',
 		)
 	);
 	$wp_customize->add_control(
@@ -67,7 +67,7 @@ function portafolio_customize_register( $wp_customize ) {
 			'capability' => 'edit_theme_options',
 			'default' => '',
 			'transport' => 'refresh',
-			'sanitaize_callback' => '',
+			'sanitaize_callback' => 'esc_url',
 		)
 	);
 	$wp_customize->add_control(
@@ -88,7 +88,7 @@ function portafolio_customize_register( $wp_customize ) {
 			'capability' => 'edit_theme_options',
 			'default' => '',
 			'transport' => 'refresh',
-			'sanitaize_callback' => '',
+			'sanitaize_callback' => 'esc_url',
 		)
 	);
 	$wp_customize->add_control(
@@ -109,7 +109,7 @@ function portafolio_customize_register( $wp_customize ) {
 			'capability' => 'edit_theme_options',
 			'default' => '',
 			'transport' => 'refresh',
-			'sanitaize_callback' => '',
+			'sanitaize_callback' => 'esc_url',
 		)
 	);
 	$wp_customize->add_control(
