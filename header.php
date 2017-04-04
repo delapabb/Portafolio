@@ -46,6 +46,13 @@
 			<?php
 			endif;  ?>
 
+			<div class="social-media-links">
+				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" alt="Linked In">
+				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/angellist.svg" alt="AngelList">
+				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/github.svg" alt="GitHub">
+				<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" alt="Twitter">
+			</div>
+
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
