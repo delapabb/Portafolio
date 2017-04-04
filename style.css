@@ -2960,3 +2960,46 @@ select[multiple] {
 .clearfix::after {
   clear: both;
 }
+
+.site-branding {
+  max-width: 42.5rem;
+}
+
+.site-title {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@media print, screen and (min-width: 40em) {
+  .site-title {
+    font-size: 3rem;
+  }
+}
+
+.site-description {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+@media print, screen and (min-width: 40em) {
+  .site-description {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.bio {
+  font-size: .95rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .bio {
+    font-size: 1rem;
+  }
+}
