@@ -111,7 +111,13 @@ function portafolio_scripts() {
 
 	wp_enqueue_script( 'portafolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'portafolio-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'portafolio-themes-js', get_template_directory_uri() . '/js/theme.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'portafolio-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), '20151215', false );
+
+	wp_enqueue_script( 'portafolio-jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array(), '20151215', false );
+
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

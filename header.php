@@ -50,9 +50,9 @@
 			$linkedin_url = get_theme_mod( 'portafolio_linkedin_url');
 			$angellist_url = get_theme_mod( 'portafolio_angellist_url');
 			$github_url = get_theme_mod( 'portafolio_github_url');
-			$twitter_url = get_theme_mod( 'portafolio_twitter_url');
-			if ( $linkedin_url || $angellist_url || $github_url || $twitter_url ) : ?>
-			<div class="social-media-links">
+			$twitter_url = get_theme_mod( 'portafolio_twitter_url'); ?>
+			<div class="bio-drawer-footer">
+				<img class="icon toggle-bio" src="<?php bloginfo('stylesheet_directory'); ?>/images/toggle.svg" alt="Linked In">
 				<?php if ( $linkedin_url ) : ?>
 					<a href= "<?php echo $linkedin_url; ?>" target="_blank">
 						<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/linkedin.svg" alt="Linked In">
@@ -74,8 +74,6 @@
 					</a>
 				<?php endif; ?>
 			</div>
-			<?php 
-			endif; ?>
 
 		</div><!-- .site-branding -->
 

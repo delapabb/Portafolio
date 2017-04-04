@@ -3012,6 +3012,7 @@ select[multiple] {
 }
 
 .bio {
+  display: none;
   font-size: .95rem;
 }
 
@@ -3022,6 +3023,6 @@ select[multiple] {
 }
 
 /* Social Media Links */
-.social-media-links {
-  margin: -0.8rem 0rem 1rem 0rem;
+.bio-drawer-footer {
+  margin: 0rem 0rem 1rem 0rem;
 }
