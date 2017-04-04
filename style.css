@@ -2983,6 +2983,13 @@ select[multiple] {
 @media print, screen and (min-width: 40em) {
   .site-title {
     font-size: 3rem;
+    margin: 1.25rem 0 0 0;
+  }
+}
+
+@media print, screen and (min-width: 64em) {
+  .site-title {
+    margin: 1.5rem 0 0 0;
   }
 }
 
