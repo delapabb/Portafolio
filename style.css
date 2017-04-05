@@ -1898,7 +1898,7 @@ figure {
 code {
   padding: 0.125rem 0.3125rem 0.0625rem;
   border: 1px solid #cacaca;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: 200;
   color: #444444;
@@ -1907,7 +1907,7 @@ code {
 kbd {
   margin: 0;
   padding: 0.125rem 0.25rem 0;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   color: #444444;
 }
@@ -2125,7 +2125,7 @@ textarea::placeholder {
 input:disabled, input[readonly],
 textarea:disabled,
 textarea[readonly] {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   cursor: not-allowed;
 }
 
@@ -2218,7 +2218,7 @@ label.middle {
 .input-group-label {
   padding: 0 1rem;
   border: 1px solid #cacaca;
-  background: #e6e6e6;
+  background: #f2f2f2;
   color: #444444;
   text-align: center;
   white-space: nowrap;
@@ -2323,7 +2323,7 @@ select:focus {
 }
 
 select:disabled {
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
   cursor: not-allowed;
 }
 
@@ -2534,6 +2534,10 @@ select[multiple] {
 .button:after {
   content: "\2192";
   margin-left: 6px;
+}
+
+.card {
+  background: #f2f2f2;
 }
 
 /* Site Branding */
