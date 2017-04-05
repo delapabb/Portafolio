@@ -2522,6 +2522,8 @@ select[multiple] {
   position: relative;
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 8px solid rgba(0, 0, 0, 0.03);
+  border-top-right-radius: 35px;
+  overflow: hidden;
 }
 
 .card-grid .card h2 {
@@ -2667,4 +2669,9 @@ body {
 
 .bio-drawer-footer .toggle-bio.bio-open:hover, .bio-drawer-footer .toggle-bio.bio-open:active, .bio-drawer-footer .toggle-bio.bio-open:focus {
   background-image: url(images/toggle-open-over.svg);
+}
+
+.bio-drawer-footer .button {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
