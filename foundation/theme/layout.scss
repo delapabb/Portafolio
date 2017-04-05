@@ -14,4 +14,13 @@ body {
 
 .top-link {
 	margin:1rem 0rem;
+	.icon {
+		display:inline-block;
+		height:32px;
+		width:32px;
+		background:url('images/top.svg');
+		&:hover {
+			background:url('images/top-over.svg');
+		}
+	}
 }

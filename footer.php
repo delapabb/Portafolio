@@ -12,7 +12,7 @@
 ?>
 
 	<div class="top-link text-center show-for-small-only">
-		<a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/top.svg" alt="Back To Top"></a>
+		<a href="#" class="icon" ></a>
 	</div>
 
 	</div><!-- #content -->

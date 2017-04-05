@@ -2565,6 +2565,17 @@ body {
   margin: 1rem 0rem;
 }
 
+.top-link .icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background: url("images/top.svg");
+}
+
+.top-link .icon:hover {
+  background: url("images/top-over.svg");
+}
+
 /* Site Branding */
 .site-branding {
   max-width: 42.5rem;
