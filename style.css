@@ -2494,11 +2494,14 @@ select[multiple] {
 .button {
   display: inline-block;
   vertical-align: top;
-  padding: 10px 10px 0px 10px;
+  padding: 11px 10px 0px 10px;
   height: 32px;
   line-height: 1;
   background: #0095ff;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 .button:hover, .button:active, .button:focus {
@@ -2506,7 +2509,7 @@ select[multiple] {
 }
 
 .button:after {
-  content: "\2192";
+  content: url(images/cta-arrow.svg);
   margin-left: 6px;
 }
 
