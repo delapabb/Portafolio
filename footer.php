@@ -27,6 +27,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+</div><!-- .column .row wrapper -->
 </body>
 </html>
