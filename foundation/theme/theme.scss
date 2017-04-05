@@ -25,7 +25,7 @@
 }
 
 .site-description {
-  margin:0;
+  margin:0.25rem 0 0.25rem 0;
   max-width:26.25rem;
   font-size:1rem;
   font-weight:400;
@@ -50,9 +50,8 @@
 /* Site Branding Footer */
 
 .bio-drawer-footer {
-  margin:0.25rem 0rem 1rem 0rem;
+  margin:0.5rem 0 1rem 0;
   .toggle-bio {
-    background:$black;
     background-image: url(images/toggle-closed.svg);
     margin-bottom:-11px;
     display:inline-block;
