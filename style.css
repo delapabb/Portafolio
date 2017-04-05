@@ -2511,7 +2511,7 @@ select[multiple] {
 }
 
 .card-grid .card {
-  background: #f2f2f2;
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .card-grid .card h2 {
@@ -2521,6 +2521,7 @@ select[multiple] {
 }
 
 .card-grid .card .button {
+  padding-left: 1rem;
   margin-bottom: 1.5rem;
 }
 

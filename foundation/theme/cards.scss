@@ -1,12 +1,13 @@
 .card-grid {
 	.card {
-		background:$light-gray;
+		background:rgba(0,0,0,0.05);
 		h2 {
 			margin-bottom:-0.5rem;
 			padding:1rem;
 			font-size:1rem;
 		}
 		.button {
+			padding-left:1rem;
 			margin-bottom:1.5rem;
 		}
 	}
