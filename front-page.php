@@ -28,14 +28,14 @@ get_header(); ?>
 			</header>
 
 			<div class="card-grid">
-				<div class="row">
+				<div class="row small-up-1 medium-up-2 large-up-3">
 
 					<?php
 
 					/* Start the Loop */
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 
-						?><div class="small-12 medium-6 large-4 column"><?php
+						?><div class="column column-block"><?php
 
 							/*
 							 * Include the Post-Format-specific template for the content.
