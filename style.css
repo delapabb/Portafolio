@@ -2550,6 +2550,12 @@ select[multiple] {
   margin-bottom: 1.5rem;
 }
 
+/* Layout */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 /* Site Branding */
 .site-branding {
   max-width: 42.5rem;
