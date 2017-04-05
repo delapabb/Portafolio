@@ -595,21 +595,21 @@ pre {
 }
 
 .row .row {
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
 }
 
 @media print, screen and (min-width: 40em) {
   .row .row {
-    margin-right: -0.5rem;
-    margin-left: -0.5rem;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
   }
 }
 
 @media print, screen and (min-width: 64em) {
   .row .row {
-    margin-right: -0.5rem;
-    margin-left: -0.5rem;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
   }
 }
 
@@ -634,8 +634,8 @@ pre {
 .column, .columns {
   width: 100%;
   float: left;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
@@ -1015,8 +1015,8 @@ pre {
 }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .small-centered {
@@ -1316,8 +1316,8 @@ pre {
     margin-left: 0;
   }
   .medium-uncollapse > .column, .medium-uncollapse > .columns {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
   .medium-centered {
     margin-right: auto;
@@ -1615,8 +1615,8 @@ pre {
     margin-left: 0;
   }
   .large-uncollapse > .column, .large-uncollapse > .columns {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
   }
   .large-centered {
     margin-right: auto;
@@ -1637,7 +1637,7 @@ pre {
 }
 
 .column-block {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .column-block > :last-child {
@@ -2515,6 +2515,7 @@ select[multiple] {
 
 .card-grid .card {
   background: rgba(0, 0, 0, 0.05);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.02);
 }
 
 .card-grid .card h2 {
