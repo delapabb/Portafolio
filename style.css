@@ -2536,8 +2536,18 @@ select[multiple] {
   margin-left: 6px;
 }
 
-.card {
+.card-grid .card {
   background: #f2f2f2;
+}
+
+.card-grid .card h2 {
+  margin-bottom: -0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.card-grid .card .button {
+  margin-bottom: 1.5rem;
 }
 
 /* Site Branding */

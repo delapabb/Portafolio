@@ -13,16 +13,17 @@
 	<header class="entry-header">
 		<?php
 		echo get_the_post_thumbnail( $post_id, 'full' );
-		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+		
+		the_title( '<h2>', '</h2>' );
 
 		if ( 'post' === get_post_type() ) : ?>
+
+		<!--
 		<div class="entry-meta">
 			<?php portafolio_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div>
+		.entry-meta -->
+
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
@@ -35,14 +36,13 @@
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'portafolio' ),
-				'after'  => '</div>',
-			) );
 		?>
+
+		<a class="button" href="<?php echo get_permalink(); ?>">See This Project</a>
+		
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php portafolio_entry_footer(); ?>
+		<?php // portafolio_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

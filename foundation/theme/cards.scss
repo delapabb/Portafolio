@@ -1,4 +1,13 @@
-.card {
-	background:$light-gray;
-
+.card-grid {
+	.card {
+		background:$light-gray;
+		h2 {
+			margin-bottom:-0.5rem;
+			padding:1rem;
+			font-size:1rem;
+		}
+		.button {
+			margin-bottom:1.5rem;
+		}
+	}
 }

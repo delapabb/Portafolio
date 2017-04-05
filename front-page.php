@@ -24,7 +24,7 @@ get_header(); ?>
 		if ( $the_query->have_posts() ) : ?>
 
 			<header>
-				<h1 class="page-title screen-reader-text show-for-sr"><?php single_post_title(); ?></h1>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 			</header>
 
 			<div class="card-grid">
