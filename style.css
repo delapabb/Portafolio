@@ -2519,19 +2519,25 @@ select[multiple] {
 }
 
 .card-grid .card {
-  background: rgba(0, 0, 0, 0.05);
-  border-bottom: 8px solid rgba(0, 0, 0, 0.02);
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.03);
 }
 
 .card-grid .card h2 {
-  margin-bottom: -0.5rem;
+  margin-bottom: 3rem;
   padding: 1rem;
   font-size: 1rem;
 }
 
 .card-grid .card .button {
-  padding-left: 1rem;
-  margin-bottom: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.2rem 1rem 1rem 1rem;
+  margin-bottom: 0rem;
+  text-align: right;
 }
 
 /* Layout */
@@ -2643,10 +2649,22 @@ body {
   width: 32px;
 }
 
+.bio-drawer-footer .toggle-bio:hover, .bio-drawer-footer .toggle-bio:active, .bio-drawer-footer .toggle-bio:focus {
+  background-image: url(images/toggle-closed-over.svg);
+}
+
 .bio-drawer-footer .toggle-bio.bio-closed {
   background-image: url(images/toggle-closed.svg);
 }
 
+.bio-drawer-footer .toggle-bio.bio-closed:hover, .bio-drawer-footer .toggle-bio.bio-closed:active, .bio-drawer-footer .toggle-bio.bio-closed:focus {
+  background-image: url(images/toggle-closed-over.svg);
+}
+
 .bio-drawer-footer .toggle-bio.bio-open {
   background-image: url(images/toggle-open.svg);
+}
+
+.bio-drawer-footer .toggle-bio.bio-open:hover, .bio-drawer-footer .toggle-bio.bio-open:active, .bio-drawer-footer .toggle-bio.bio-open:focus {
+  background-image: url(images/toggle-open-over.svg);
 }

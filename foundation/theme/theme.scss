@@ -77,11 +77,20 @@
     display:inline-block;
     height:32px;
     width:32px;
+    &:hover, &:active, &:focus {
+      background-image: url(images/toggle-closed-over.svg);
+    }
   }
   .toggle-bio.bio-closed {
     background-image: url(images/toggle-closed.svg);
+    &:hover, &:active, &:focus {
+      background-image: url(images/toggle-closed-over.svg);
+    }
   }
   .toggle-bio.bio-open {
     background-image: url(images/toggle-open.svg);
+    &:hover, &:active, &:focus {
+      background-image: url(images/toggle-open-over.svg);
+    }
   }
 }
