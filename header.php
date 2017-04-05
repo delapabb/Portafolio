@@ -42,7 +42,9 @@
 			<?php
 			$bio = get_theme_mod( 'portafolio_bio_text' ); 
 			if ( $bio || is_customize_preview() ) : ?>
-				<p class="bio"><?php echo $bio; ?></p>
+				<div class="bio">
+					<?php echo wpautop( $bio, true ); ?></p>
+				</div>
 			<?php
 			endif;  ?>
 

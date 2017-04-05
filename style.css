@@ -3017,6 +3017,10 @@ select[multiple] {
   font-size: .95rem;
 }
 
+.bio p {
+  margin-bottom: 0.25rem;
+}
+
 @media print, screen and (min-width: 40em) {
   .bio {
     font-size: 1rem;
