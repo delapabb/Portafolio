@@ -1,0 +1,17 @@
+/* Buttons */
+.button {
+  display:inline-block;
+  vertical-align:top;
+  padding:10px 10px 0px 10px;
+  height:32px;
+  line-height:1;
+  background:$primary-color;
+  color:$white;
+  &:hover, &:active, &:focus {
+  	color:$white;
+  }
+  &:after {
+  	content: "\2192";
+  	margin-left:6px;
+  }
+}

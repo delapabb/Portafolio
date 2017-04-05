@@ -75,6 +75,7 @@
 						<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" alt="Twitter">
 					</a>
 				<?php endif; ?>
+				<a class="button" href="#">Hire Me</a>
 			</div>
 
 		</div><!-- .site-branding -->
