@@ -17,7 +17,7 @@ get_header(); ?>
 		<?php
 		$the_query = new WP_Query( 
 			array(
-				'category_name' => 'portfolio'
+				'post_type' => 'case_study'
 			)
 		);
 
