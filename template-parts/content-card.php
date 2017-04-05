@@ -12,8 +12,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'card' ); ?>>
 	<header class="entry-header">
 		<?php
-		echo get_the_post_thumbnail( $post_id, 'full' );
-		
+
+		if ( has_post_thumbnail() ) :
+			echo get_the_post_thumbnail( $post_id, 'full' );
+		else :
+			?><img src="http://placehold.it/1200x900?text=Select+A+Featured+Image"><?php
+		endif;
+
 		the_title( '<h2>', '</h2>' );
 
 		if ( 'post' === get_post_type() ) : ?>
