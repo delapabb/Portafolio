@@ -5,19 +5,22 @@
 		border-bottom:8px solid rgba(0,0,0,0.03);
 		border-top-right-radius: 35px;
 		overflow:hidden;
+		text-align:right;
 		h2 {
-			margin-bottom:3rem;
-			padding:1rem;
-			font-size:1rem;
+			margin-bottom: 3.1rem;
+			padding: 1rem;
+			font-size: 1.1rem;
+			font-weight: 300;
+			text-transform: capitalize;
 		}
 		.button {
 			position:absolute;
 			bottom:0;
+			left:0;
 			width:100%;
 			height:auto;
-			padding:1.2rem 1rem 1rem 1rem;
+			padding:1rem 1rem 1rem 1rem;
 			margin-bottom:0rem;
-			text-align:right;
 		}
 	}
 }

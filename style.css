@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Catamaran:900");
-@import url("https://fonts.googleapis.com/css?family=Biryani:200,400");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 /*
 Theme Name: Portafolio
 Theme URI: http://underscores.me/
@@ -512,8 +512,8 @@ body {
   margin: 0;
   padding: 0;
   background: #ffffff;
-  font-family: "Biryani", sans-serif;
-  font-weight: 200;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   line-height: 1.5;
   color: #444444;
 }
@@ -1697,9 +1697,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Biryani", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
   color: inherit;
   text-rendering: optimizeLegibility;
 }
@@ -1874,7 +1874,7 @@ code {
   border: 1px solid #cacaca;
   background-color: #f2f2f2;
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: 200;
+  font-weight: 300;
   color: #444444;
 }
 
@@ -1889,7 +1889,7 @@ kbd {
 .subheader {
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.4;
   color: #999999;
 }
@@ -2056,7 +2056,7 @@ textarea {
   box-shadow: inset 0 1px 2px rgba(68, 68, 68, 0.1);
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   color: #444444;
   transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
   -webkit-appearance: none;
@@ -2148,7 +2148,7 @@ label {
   display: block;
   margin: 0;
   font-size: 0.875rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.8;
   color: #444444;
 }
@@ -2494,7 +2494,7 @@ select[multiple] {
 .button {
   display: inline-block;
   vertical-align: top;
-  padding: 11px 10px 0px 10px;
+  padding: 9px 11px 0px 10px;
   height: 32px;
   line-height: 1;
   background: #0095ff;
@@ -2524,22 +2524,25 @@ select[multiple] {
   border-bottom: 8px solid rgba(0, 0, 0, 0.03);
   border-top-right-radius: 35px;
   overflow: hidden;
+  text-align: right;
 }
 
 .card-grid .card h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 3.1rem;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
 .card-grid .card .button {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: auto;
-  padding: 1.2rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   margin-bottom: 0rem;
-  text-align: right;
 }
 
 /* Layout */
@@ -2580,7 +2583,7 @@ body {
   font-family: 'Catamaran', sans-serif;
   font-size: 1.75rem;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -2598,7 +2601,7 @@ body {
   margin: 0.25rem 0 0.25rem 0;
   max-width: 26.25rem;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: capitalize;
 }
 
