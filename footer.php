@@ -11,6 +11,10 @@
 
 ?>
 
+	<div class="top-link text-center show-for-small-only">
+		<a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/top.svg" alt="Back To Top"></a>
+	</div>
+
 	</div><!-- #content -->
 
 	<!-- #colophon
