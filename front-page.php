@@ -28,7 +28,7 @@ get_header(); ?>
 			</header>
 
 			<div class="card-grid">
-				<div class="row small-up-1 medium-up-2 large-up-3">
+				<div class="row small-up-1 medium-up-2 large-up-3" data-equalizer data-equalize-on="medium">
 
 					<?php
 

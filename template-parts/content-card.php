@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'card' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'card' ); ?> data-equalizer-watch>
 	<header class="entry-header">
 		<?php
 

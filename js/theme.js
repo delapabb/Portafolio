@@ -1,3 +1,5 @@
+$(document).foundation();
+
 ( function( $ ) {
 
 	$( ".toggle-bio" ).click(function() {
