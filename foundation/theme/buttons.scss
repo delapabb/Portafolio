@@ -10,11 +10,16 @@
   font-weight:400;
   font-size:0.8rem;
   text-transform:uppercase;
-  &:hover, &:active, &:focus {
-  	color:$white;
-  }
   &:after {
-  content: url(images/cta-arrow.svg);
-  margin-left:6px;
+    content: url(images/cta-arrow.svg);
+    margin-left:6px;
   }
+  &:hover, &:active, &:focus {
+  	background:$secondary-color;
+    color:$black;
+    &:after {
+      content: url(images/cta-arrow-over.svg);
+    }
+  }
+
 }

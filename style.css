@@ -2504,13 +2504,18 @@ select[multiple] {
   text-transform: uppercase;
 }
 
-.button:hover, .button:active, .button:focus {
-  color: #ffffff;
-}
-
 .button:after {
   content: url(images/cta-arrow.svg);
   margin-left: 6px;
+}
+
+.button:hover, .button:active, .button:focus {
+  background: #ffc000;
+  color: #444444;
+}
+
+.button:hover:after, .button:active:after, .button:focus:after {
+  content: url(images/cta-arrow-over.svg);
 }
 
 .card-grid .card {
