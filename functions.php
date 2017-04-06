@@ -165,8 +165,13 @@ function portafolio_meta_project_details_callback( $post ) {
     $portafolio_stored_meta = get_post_meta( $post->ID );
     ?>
     <p>
+        <label for="summary"><?php _e( 'Case Study Summary', 'portafolio-textdomain' )?></label>
+        <br>
+        <textarea name="summary" id="summary" rows="4" cols="40" class="widefat"><?php if ( isset ( $portafolio_stored_meta['summary'] ) ) echo $portafolio_stored_meta['summary'][0]; ?></textarea>
+        <br>
         <label for="client"><?php _e( 'Client', 'portafolio-textdomain' )?></label>
-        <input type="text" name="client" id="client" value="<?php if ( isset ( $portafolio_stored_meta['client'] ) ) echo $portafolio_stored_meta['client'][0]; ?>" />
+        <br>
+        <input type="text" name="client" id="client" class="widefat" value="<?php if ( isset ( $portafolio_stored_meta['client'] ) ) echo $portafolio_stored_meta['client'][0]; ?>">
     </p>
  
     <?php 
@@ -188,7 +193,11 @@ function portafolio_meta_save( $post_id ) {
     if( isset( $_POST[ 'client' ] ) ) {
         update_post_meta( $post_id, 'client', sanitize_text_field( $_POST[ 'client' ] ) );
     }
- 
+	if( isset( $_POST[ 'summary' ] ) ) {
+		//update_post_meta( $post_id, 'summary', sanitize_text_field( $_POST[ 'summary' ] ) );
+        update_post_meta( $post_id, 'summary', wp_kses( $_POST[ 'summary' ], array(), array() ) );
+    }
+
 }
 add_action( 'save_post', 'portafolio_meta_save' );
 

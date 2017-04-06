@@ -30,14 +30,22 @@
 			<div class="small-12 medium-6 medium-pull-6 large-7 large-pull-5 columns panel">
 				<div class="project-details">
 					<div class="objective">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet nisi enim. Vivamus eget cursus eros. Vestibulum vehicula quam in libero dignissim, at porttitor mauris varius. Suspendisse eget massa sodales, lacinia mauris ut, lobortis tellus. Maecenas eget scelerisque erat. In tincidunt sodales augue non suscipit.</p>
 						<?php 
+
+							$summary = get_post_meta( get_the_ID(), 'summary', true );
 							$client = get_post_meta( get_the_ID(), 'client', true );
+
+							if( !empty( $summary ) ) : ?>
+								<?php echo wpautop( $summary, true ); ?>
+							<?php
+							endif;
+
 							if( !empty( $client ) ) : ?>
 								<p class="label">Client</p>
 								<p><?php echo $client ?></p>
 							<?php
 							endif; ?>
+
 						<p class="label">What I Executed</p>
 						<p class="tools">Entreprenuership, web development, photography, branding, product development</p>
 					</div>
