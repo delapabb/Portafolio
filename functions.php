@@ -131,7 +131,7 @@ function case_study_post_type() {
 		'can_export'            => true,
 		'has_archive'           => true,		
 		'exclude_from_search'   => false,
-		'publicly_queryable'    => false,
+		'publicly_queryable'    => true,
 		'rewrite'               => $rewrite,
 		'capability_type'       => 'post',
 		'show_in_rest'          => true,
@@ -143,6 +143,12 @@ function case_study_post_type() {
 add_action( 'init', 'case_study_post_type', 0 );
 
 }
+
+function my_rewrite_flush() {
+    case_study_post_type();
+    flush_rewrite_rules();
+}
+add_action( 'after_switch_theme', 'my_rewrite_flush' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
