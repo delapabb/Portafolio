@@ -24,3 +24,37 @@ body {
 		}
 	}
 }
+
+.case-study {
+	.entry-title {
+		text-transform:capitalize;
+	}
+	.summary {
+		border-bottom:1px solid $secondary-color;
+		margin-bottom:1rem;
+		@include breakpoint(medium) {
+			padding-bottom:0.7rem;
+		}
+		.panel {
+			.featured-image {
+				margin-bottom:1rem;
+				border-top-right-radius: 35px;
+				overflow:hidden;
+			}
+			.project-details {
+				.objective {
+					padding-top:1rem;
+					border-top:1px solid $secondary-color;
+					.label {
+						margin:0rem;
+						font-weight:600;
+						text-transform:uppercase;
+					}
+					.tools {
+						font-style:italic;
+					}
+				}
+			}
+		}
+	}
+}

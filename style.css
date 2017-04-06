@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Catamaran:900");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600");
 /*
 Theme Name: Portafolio
 Theme URI: http://underscores.me/
@@ -2574,6 +2574,42 @@ body {
 
 .top-link .icon:hover {
   background: url("images/top-over.svg");
+}
+
+.case-study .entry-title {
+  text-transform: capitalize;
+}
+
+.case-study .summary {
+  border-bottom: 1px solid #ffc000;
+  margin-bottom: 1rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .case-study .summary {
+    padding-bottom: 0.7rem;
+  }
+}
+
+.case-study .summary .panel .featured-image {
+  margin-bottom: 1rem;
+  border-top-right-radius: 35px;
+  overflow: hidden;
+}
+
+.case-study .summary .panel .project-details .objective {
+  padding-top: 1rem;
+  border-top: 1px solid #ffc000;
+}
+
+.case-study .summary .panel .project-details .objective .label {
+  margin: 0rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.case-study .summary .panel .project-details .objective .tools {
+  font-style: italic;
 }
 
 /* Site Branding */
