@@ -118,8 +118,8 @@ function case_study_post_type() {
 		'label'                 => __( 'Case Study', 'text_domain' ),
 		'description'           => __( 'A portfolio case study', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes', ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'comments', 'revisions', ),
+		'taxonomies'            => array(),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -156,7 +156,7 @@ add_action( 'after_switch_theme', 'my_rewrite_flush' );
 
 // Case study project details meta box
 function portafolio_case_study_meta() {
-    add_meta_box( 'portafolio_project_details', __( 'Project Details', 'portafolio-textdomain' ), 'portafolio_meta_project_details_callback', 'case_study' );
+    add_meta_box( 'portafolio_project_details', __( 'Project Details', 'portafolio-textdomain' ), 'portafolio_meta_project_details_callback', 'case_study', 'advanced', 'high' );
 }
 add_action( 'add_meta_boxes', 'portafolio_case_study_meta' );
 
@@ -164,19 +164,23 @@ function portafolio_meta_project_details_callback( $post ) {
     wp_nonce_field( basename( __FILE__ ), 'portafolio_nonce' );
     $portafolio_stored_meta = get_post_meta( $post->ID );
     ?>
-    <p>
+    	<p>
         <label for="summary"><?php _e( 'Case Study Summary', 'portafolio-textdomain' )?></label>
         <br>
         <textarea name="summary" id="summary" rows="4" cols="40" class="widefat"><?php if ( isset ( $portafolio_stored_meta['summary'] ) ) echo $portafolio_stored_meta['summary'][0]; ?></textarea>
-        <br>
+        </p>
+
+        <p>
         <label for="client"><?php _e( 'Client', 'portafolio-textdomain' )?></label>
         <br>
         <input type="text" name="client" id="client" class="widefat" value="<?php if ( isset ( $portafolio_stored_meta['client'] ) ) echo $portafolio_stored_meta['client'][0]; ?>">
-   		<br>
+   		</p>
+
+		<p>
    		<label for="tools"><?php _e( 'What You Executed', 'portafolio-textdomain' )?></label>
    		<br>
    		<input type="text" name="tools" id="tools" class="widefat" value="<?php if ( isset ( $portafolio_stored_meta['tools'] ) ) echo $portafolio_stored_meta['tools'][0]; ?>">
-    </p>
+   		</p>
  
     <?php 
 }
