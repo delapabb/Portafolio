@@ -151,6 +151,20 @@ function my_rewrite_flush() {
 add_action( 'after_switch_theme', 'my_rewrite_flush' );
 
 /**
+ * Custom fields for the case study post type
+ */
+
+// Case study project details meta box
+function portafolio_case_study_meta() {
+    add_meta_box( 'portafolio_project_details', __( 'Project Details', 'portafolio-textdomain' ), 'portafolio_meta_project_details_callback', 'case_study' );
+}
+add_action( 'add_meta_boxes', 'portafolio_case_study_meta' );
+
+function portafolio_meta_project_details_callback( $post ) {
+    echo 'This is a meta box';  
+}
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
