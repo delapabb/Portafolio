@@ -31,8 +31,13 @@
 				<div class="project-details">
 					<div class="objective">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet nisi enim. Vivamus eget cursus eros. Vestibulum vehicula quam in libero dignissim, at porttitor mauris varius. Suspendisse eget massa sodales, lacinia mauris ut, lobortis tellus. Maecenas eget scelerisque erat. In tincidunt sodales augue non suscipit.</p>
-						<p class="label">Client</p>
-						<p>City of Nuevo Progreso, Tamaulipas Mexico</p>
+						<?php 
+							$client = get_post_meta( get_the_ID(), 'client', true );
+							if( !empty( $client ) ) : ?>
+								<p class="label">Client</p>
+								<p><?php echo $client ?></p>
+							<?php
+							endif; ?>
 						<p class="label">What I Executed</p>
 						<p class="tools">Entreprenuership, web development, photography, branding, product development</p>
 					</div>

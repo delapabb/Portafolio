@@ -161,8 +161,36 @@ function portafolio_case_study_meta() {
 add_action( 'add_meta_boxes', 'portafolio_case_study_meta' );
 
 function portafolio_meta_project_details_callback( $post ) {
-    echo 'This is a meta box';  
+    wp_nonce_field( basename( __FILE__ ), 'portafolio_nonce' );
+    $portafolio_stored_meta = get_post_meta( $post->ID );
+    ?>
+    <p>
+        <label for="client"><?php _e( 'Client', 'portafolio-textdomain' )?></label>
+        <input type="text" name="client" id="client" value="<?php if ( isset ( $portafolio_stored_meta['client'] ) ) echo $portafolio_stored_meta['client'][0]; ?>" />
+    </p>
+ 
+    <?php 
 }
+
+function portafolio_meta_save( $post_id ) {
+
+    // Checks save status
+    $is_autosave = wp_is_post_autosave( $post_id );
+    $is_revision = wp_is_post_revision( $post_id );
+    $is_valid_nonce = ( isset( $_POST[ 'portafolio_nonce' ] ) && wp_verify_nonce( $_POST[ 'portafolio_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+ 
+    // Exits script depending on save status
+    if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+        return;
+    }
+ 
+    // Checks for input and sanitizes/saves if needed
+    if( isset( $_POST[ 'client' ] ) ) {
+        update_post_meta( $post_id, 'client', sanitize_text_field( $_POST[ 'client' ] ) );
+    }
+ 
+}
+add_action( 'save_post', 'portafolio_meta_save' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
