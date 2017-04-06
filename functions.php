@@ -172,6 +172,10 @@ function portafolio_meta_project_details_callback( $post ) {
         <label for="client"><?php _e( 'Client', 'portafolio-textdomain' )?></label>
         <br>
         <input type="text" name="client" id="client" class="widefat" value="<?php if ( isset ( $portafolio_stored_meta['client'] ) ) echo $portafolio_stored_meta['client'][0]; ?>">
+   		<br>
+   		<label for="tools"><?php _e( 'What You Executed', 'portafolio-textdomain' )?></label>
+   		<br>
+   		<input type="text" name="tools" id="tools" class="widefat" value="<?php if ( isset ( $portafolio_stored_meta['tools'] ) ) echo $portafolio_stored_meta['tools'][0]; ?>">
     </p>
  
     <?php 
@@ -196,6 +200,9 @@ function portafolio_meta_save( $post_id ) {
 	if( isset( $_POST[ 'summary' ] ) ) {
 		//update_post_meta( $post_id, 'summary', sanitize_text_field( $_POST[ 'summary' ] ) );
         update_post_meta( $post_id, 'summary', wp_kses( $_POST[ 'summary' ], array(), array() ) );
+    }
+    if( isset( $_POST[ 'tools' ] ) ) {
+        update_post_meta( $post_id, 'tools', sanitize_text_field( $_POST[ 'tools' ] ) );
     }
 
 }

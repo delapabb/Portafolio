@@ -34,6 +34,7 @@
 
 							$summary = get_post_meta( get_the_ID(), 'summary', true );
 							$client = get_post_meta( get_the_ID(), 'client', true );
+							$tools = get_post_meta( get_the_ID(), 'tools', true );
 
 							if( !empty( $summary ) ) : ?>
 								<?php echo wpautop( $summary, true ); ?>
@@ -44,10 +45,14 @@
 								<p class="label">Client</p>
 								<p><?php echo $client ?></p>
 							<?php
+							endif;
+
+							if( !empty( $tools ) ) : ?>
+								<p class="label">What I Executed</p>
+								<p><?php echo $tools ?></p>
+							<?php
 							endif; ?>
 
-						<p class="label">What I Executed</p>
-						<p class="tools">Entreprenuership, web development, photography, branding, product development</p>
 					</div>
 				</div>
 			</div>
