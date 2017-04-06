@@ -2592,14 +2592,24 @@ body {
 }
 
 .case-study .summary .panel .featured-image {
-  margin-bottom: 1rem;
   border-top-right-radius: 35px;
   overflow: hidden;
 }
 
+@media print, screen and (min-width: 40em) {
+  .case-study .summary .panel .featured-image {
+    margin-bottom: 1rem;
+  }
+}
+
 .case-study .summary .panel .project-details .objective {
   padding-top: 1rem;
-  border-top: 1px solid #ffc000;
+}
+
+@media print, screen and (min-width: 40em) {
+  .case-study .summary .panel .project-details .objective {
+    border-top: 1px solid #ffc000;
+  }
 }
 
 .case-study .summary .panel .project-details .objective .label {
