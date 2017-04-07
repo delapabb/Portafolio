@@ -2699,7 +2699,7 @@ body {
 }
 
 .site-description {
-  margin: 0.25rem 0 0.25rem 0;
+  margin: 0.25rem 0 0.25rem 0rem;
   max-width: 26.25rem;
   font-size: 1rem;
   font-weight: 300;
@@ -2708,7 +2708,7 @@ body {
 
 @media print, screen and (min-width: 40em) {
   .site-description {
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.25rem 0.15rem;
     max-width: 35rem;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2716,7 +2716,7 @@ body {
 }
 
 .bio {
-  margin: 0px 0px 0px 16px;
+  margin: 0rem 0rem 0rem 1.25rem;
   display: none;
   font-size: .95rem;
 }
