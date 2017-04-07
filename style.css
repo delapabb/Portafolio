@@ -2587,35 +2587,19 @@ body {
 }
 
 .case-study .summary {
-  border-bottom: 1px solid #ffc000;
   margin-bottom: 1rem;
-}
-
-@media print, screen and (min-width: 40em) {
-  .case-study .summary {
-    padding-bottom: 0.7rem;
-  }
+  border-bottom: 2px solid #ffc000;
+  border-top-right-radius: 2.8125rem;
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .case-study .summary .panel .featured-image {
-  border-top-right-radius: 35px;
+  border-top-right-radius: 2.1875rem;
   overflow: hidden;
 }
 
-@media print, screen and (min-width: 40em) {
-  .case-study .summary .panel .featured-image {
-    margin-bottom: 1rem;
-  }
-}
-
 .case-study .summary .panel .project-details .objective {
-  padding-top: 1rem;
-}
-
-@media print, screen and (min-width: 40em) {
-  .case-study .summary .panel .project-details .objective {
-    border-top: 1px solid #ffc000;
-  }
+  padding: 1rem 0rem 0rem 1.5rem;
 }
 
 .case-study .summary .panel .project-details .objective .label {

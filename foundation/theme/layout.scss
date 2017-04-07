@@ -30,25 +30,18 @@ body {
 		text-transform:capitalize;
 	}
 	.summary {
-		border-bottom:1px solid $secondary-color;
 		margin-bottom:1rem;
-		@include breakpoint(medium) {
-			padding-bottom:0.7rem;
-		}
+		border-bottom:2px solid $secondary-color;
+		border-top-right-radius:2.8125rem;
+		background:rgba(0,0,0,0.03);
 		.panel {
 			.featured-image {
-				@include breakpoint(medium) {
-					margin-bottom:1rem;
-				}
-				border-top-right-radius: 35px;
+				border-top-right-radius:2.1875rem;
 				overflow:hidden;
 			}
 			.project-details {
 				.objective {
-					padding-top:1rem;
-					@include breakpoint(medium) {
-						border-top:1px solid $secondary-color;
-					}
+					padding:1rem 0rem 0rem 1.5rem;
 					.label {
 						margin:0rem;
 						font-weight:600;

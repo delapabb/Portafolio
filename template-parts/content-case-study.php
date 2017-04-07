@@ -49,7 +49,7 @@
 
 							if( !empty( $tools ) ) : ?>
 								<p class="label">What I Executed</p>
-								<p><?php echo $tools ?></p>
+								<p class="tools"><?php echo $tools ?></p>
 							<?php
 							endif; ?>
 
