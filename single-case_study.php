@@ -17,7 +17,12 @@ get_header(); ?>
 
 			get_template_part( 'template-parts/content', 'case-study' );
 
-			the_post_navigation();
+			the_post_navigation(
+				array (
+					'prev_text' => __( '<span class="button-left round">Previous</span>'),
+					'next_text' => __( '<span class="button round">Next</span>')
+				)
+			);
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

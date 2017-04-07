@@ -3,6 +3,12 @@
 @import 'layout.scss';
 @import 'comments.scss';
 
+/* Basic */
+
+.screen-reader-text {
+  @extend .show-for-sr;
+}
+
 /* Site Branding */
 
 .site-branding {

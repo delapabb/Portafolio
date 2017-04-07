@@ -2412,7 +2412,7 @@ select[multiple] {
   }
 }
 
-.show-for-sr,
+.show-for-sr, .screen-reader-text,
 .show-on-focus {
   position: absolute !important;
   width: 1px;
@@ -2507,7 +2507,7 @@ select[multiple] {
 
 .button:after {
   content: url(images/cta-arrow.svg);
-  margin-left: 6px;
+  margin-left: 0.375rem;
 }
 
 .button:hover, .button:active, .button:focus {
@@ -2522,6 +2522,39 @@ select[multiple] {
 .button.round {
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+}
+
+.button-left {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.625rem 0.6875rem 0rem 0.625rem;
+  height: 32px;
+  line-height: 1;
+  background: #0095ff;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  z-index: 999;
+}
+
+.button-left:before {
+  content: url(images/cta-arrow-left.svg);
+  margin-right: 0.375rem;
+}
+
+.button-left:hover, .button-left:active, .button-left:focus {
+  background: #ffc000;
+  color: #444444;
+}
+
+.button-left:hover:before, .button-left:active:before, .button-left:focus:before {
+  content: url(images/cta-arrow-left-over.svg);
+}
+
+.button-left.round {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 
 .card-grid .card {
@@ -2612,6 +2645,57 @@ body {
   font-style: italic;
 }
 
+.case-study .entry-content {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.post-navigation {
+  margin: 1rem 0rem 2.5rem 0rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .post-navigation {
+    margin: 1rem 0rem 2rem 0rem;
+  }
+}
+
+.post-navigation .nav-links .nav-previous {
+  display: inline-block;
+  width: 48%;
+  float: left;
+}
+
+.post-navigation .nav-links .nav-previous span.button-left {
+  width: 100%;
+}
+
+.post-navigation .nav-links .nav-next {
+  display: inline-block;
+  width: 48%;
+  float: right;
+  text-align: right;
+}
+
+.post-navigation .nav-links .nav-next span.button {
+  width: 100%;
+}
+
+@media print, screen and (min-width: 40em) {
+  .post-navigation .nav-links .nav-previous, .post-navigation .nav-links .nav-next {
+    width: auto;
+  }
+}
+
+.post-navigation::before, .post-navigation::after {
+  display: table;
+  content: ' ';
+}
+
+.post-navigation::after {
+  clear: both;
+}
+
 /* Comments */
 .form-submit:hover > span.button:after, .form-submit:hover > span.button, .form-submit:hover > input[type=submit] {
   background: #ffc000;
@@ -2650,6 +2734,7 @@ body {
   content: url(images/cta-arrow-over.svg);
 }
 
+/* Basic */
 /* Site Branding */
 .site-branding {
   max-width: 42.5rem;
