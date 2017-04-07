@@ -2,7 +2,7 @@
 .button {
   display:inline-block;
   vertical-align:top;
-  padding:10px 11px 0px 10px;
+  padding:0.625rem 0.6875rem 0rem 0.625rem;
   height:32px;
   line-height:1;
   background:$primary-color;
@@ -21,5 +21,9 @@
       content: url(images/cta-arrow-over.svg);
     }
   }
-
+  &.round {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  z-index:999;
 }

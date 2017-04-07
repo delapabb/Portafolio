@@ -1,0 +1,35 @@
+/* Comments */
+
+.form-submit:hover > span.button:after, .form-submit:hover > span.button, .form-submit:hover > input[type=submit]  {
+  background:$secondary-color;
+  color:$black;
+  content: url(images/cta-arrow-over.svg);
+}
+
+.form-submit {
+  display:inline-block;
+  margin-top:1rem;
+  input[type=submit] {
+    position:relative;
+    float:left;
+    padding:0.625rem 0rem 0.5rem 0.625rem;
+    margin-right:-0.4375rem;
+    border:none;
+    height:32px;
+    line-height:1;
+    background:$primary-color;
+    color:$white;
+    font-weight:400;
+    font-size:0.8rem;
+    text-transform:uppercase;
+    &:hover, &:active, &:focus {
+      background:$secondary-color;
+      color:$black;
+    }
+  }
+  &:hover > span.button:after, &:hover > span.button, &:hover > input[type=submit] {
+    background:$secondary-color;
+    color:$black;
+    content: url(images/cta-arrow-over.svg);
+  }
+}

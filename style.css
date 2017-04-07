@@ -2494,7 +2494,7 @@ select[multiple] {
 .button {
   display: inline-block;
   vertical-align: top;
-  padding: 10px 11px 0px 10px;
+  padding: 0.625rem 0.6875rem 0rem 0.625rem;
   height: 32px;
   line-height: 1;
   background: #0095ff;
@@ -2502,6 +2502,7 @@ select[multiple] {
   font-weight: 400;
   font-size: 0.8rem;
   text-transform: uppercase;
+  z-index: 999;
 }
 
 .button:after {
@@ -2516,6 +2517,11 @@ select[multiple] {
 
 .button:hover:after, .button:active:after, .button:focus:after {
   content: url(images/cta-arrow-over.svg);
+}
+
+.button.round {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .card-grid .card {
@@ -2620,6 +2626,44 @@ body {
 
 .case-study .summary .panel .project-details .objective .tools {
   font-style: italic;
+}
+
+/* Comments */
+.form-submit:hover > span.button:after, .form-submit:hover > span.button, .form-submit:hover > input[type=submit] {
+  background: #ffc000;
+  color: #444444;
+  content: url(images/cta-arrow-over.svg);
+}
+
+.form-submit {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.form-submit input[type=submit] {
+  position: relative;
+  float: left;
+  padding: 0.625rem 0rem 0.5rem 0.625rem;
+  margin-right: -0.4375rem;
+  border: none;
+  height: 32px;
+  line-height: 1;
+  background: #0095ff;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.form-submit input[type=submit]:hover, .form-submit input[type=submit]:active, .form-submit input[type=submit]:focus {
+  background: #ffc000;
+  color: #444444;
+}
+
+.form-submit:hover > span.button:after, .form-submit:hover > span.button, .form-submit:hover > input[type=submit] {
+  background: #ffc000;
+  color: #444444;
+  content: url(images/cta-arrow-over.svg);
 }
 
 /* Site Branding */
@@ -2733,9 +2777,4 @@ body {
 
 .bio-drawer-footer .toggle-bio.bio-open:hover, .bio-drawer-footer .toggle-bio.bio-open:active, .bio-drawer-footer .toggle-bio.bio-open:focus {
   background-image: url(images/toggle-open-over.svg);
-}
-
-.bio-drawer-footer .button {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
 }
