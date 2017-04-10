@@ -2625,8 +2625,16 @@ body {
 }
 
 .page-title {
-  font-size: 1.5rem;
-  font-weight: 400;
+  margin-bottom: 0.75rem;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .page-title {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
 }
 
 .top-link {
