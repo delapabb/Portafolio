@@ -33,7 +33,7 @@ function portafolio_customize_register( $wp_customize ) {
 			'type' => 'theme_mod',
 			'capability' => 'edit_theme_options',
 			'default' => '',
-			'transport' => 'postMessage',
+			'transport' => 'refresh',
 			'sanitize_callback' => '',
 		)
 	);

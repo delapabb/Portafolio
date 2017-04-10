@@ -19,11 +19,6 @@
 			$( '.site-description' ).text( to );
 		} );
 	} );
-	wp.customize( 'portafolio_bio_text', function( value ) {
-		value.bind( function( to ) {
-			$( '.bio' ).text( to );
-		} );
-	} );
 
 	// Header text color.
 	wp.customize( 'header_textcolor', function( value ) {
