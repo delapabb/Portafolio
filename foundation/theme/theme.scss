@@ -40,15 +40,19 @@
     margin: 0 0 0.25rem 0.15rem;
   }
   font-size:1.25rem;
-  line-height:1.65rem;
+  line-height:1.8rem;
   font-weight:300;
   text-transform:capitalize;
   @include breakpoint(medium) {
     font-size:1.75rem;
-    line-height:2.25rem;
+    line-height:2.3rem;
   }
   p {
     margin:0rem;
+    line-height:1.8rem;
+    @include breakpoint(medium) {
+      line-height:2.3rem;
+    }
   }
 }
 

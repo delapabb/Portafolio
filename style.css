@@ -2769,7 +2769,7 @@ body {
 .site-description {
   margin: 0.25rem 0 0.25rem 0rem;
   font-size: 1.25rem;
-  line-height: 1.65rem;
+  line-height: 1.8rem;
   font-weight: 300;
   text-transform: capitalize;
 }
@@ -2783,12 +2783,19 @@ body {
 @media print, screen and (min-width: 40em) {
   .site-description {
     font-size: 1.75rem;
-    line-height: 2.25rem;
+    line-height: 2.3rem;
   }
 }
 
 .site-description p {
   margin: 0rem;
+  line-height: 1.8rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .site-description p {
+    line-height: 2.3rem;
+  }
 }
 
 .bio {
