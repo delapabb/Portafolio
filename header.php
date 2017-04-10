@@ -36,7 +36,7 @@
 
 			$description = get_bloginfo( 'description', 'display' );
 			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<div class="site-description"><?php echo wpautop( $description, true ); /* WPCS: xss ok. */ ?></div>
 			<?php
 			endif; ?>
 

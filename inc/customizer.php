@@ -13,6 +13,19 @@
 function portafolio_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
+
+	/* Make tagline a textarea */
+	$wp_customize->remove_control('blogdescription');
+	$wp_customize->add_control(
+		'blogdescription',
+		array(
+			'type' => 'textarea',
+			'priority' => 10,
+			'section' => 'title_tagline',
+			'label' => 'Tagline'
+		)
+	);
+
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 	$wp_customize->add_setting(
 		'portafolio_bio_text',
