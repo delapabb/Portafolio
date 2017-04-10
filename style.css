@@ -2563,15 +2563,27 @@ select[multiple] {
   border-bottom: 8px solid rgba(0, 0, 0, 0.03);
   border-top-right-radius: 35px;
   overflow: hidden;
-  text-align: right;
 }
 
-.card-grid .card h2 {
-  margin-bottom: 3.1rem;
+.card-grid .card .project-details {
+  margin-bottom: 1.8rem;
   padding: 1rem;
-  font-size: 1.1rem;
+}
+
+.card-grid .card .project-details .title {
+  font-size: 1.25rem;
   font-weight: 300;
   text-transform: capitalize;
+}
+
+.card-grid .card .project-details .label {
+  margin: 0rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-grid .card .project-details .tools {
+  font-style: italic;
 }
 
 .card-grid .card .button {

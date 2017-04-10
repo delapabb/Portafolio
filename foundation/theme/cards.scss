@@ -5,13 +5,22 @@
 		border-bottom:8px solid rgba(0,0,0,0.03);
 		border-top-right-radius: 35px;
 		overflow:hidden;
-		text-align:right;
-		h2 {
-			margin-bottom: 3.1rem;
-			padding: 1rem;
-			font-size: 1.1rem;
-			font-weight: 300;
-			text-transform: capitalize;
+		.project-details {
+			margin-bottom:1.8rem;
+			padding:1rem;
+			.title {
+				font-size: 1.25rem;
+				font-weight: 300;
+				text-transform: capitalize;
+			}
+			.label {
+				margin:0rem;
+				font-weight:600;
+				text-transform:uppercase;
+			}
+			.tools {
+				font-style:italic;
+			}
 		}
 		.button {
 			position:absolute;
