@@ -1,10 +1,15 @@
 /* Layout */
 
-body {
-	padding:1rem 0.5rem;
+.site-padding {
+	padding:0rem 0.5rem;
 	@include breakpoint(medium) {
-		padding:1rem;
+		padding:0rem 1rem;
 	}
+}
+
+#content {
+	padding:1.25rem 0rem;
+	background:$white;
 }
 
 .page-title {
@@ -18,7 +23,7 @@ body {
 }
 
 .top-link {
-	margin:1rem 0rem;
+	margin:2rem 0rem;
 	.icon {
 		display:inline-block;
 		height:32px;

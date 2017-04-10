@@ -12,9 +12,9 @@
 /* Site Branding */
 
 .site-branding {
-  margin-bottom:2rem;
+  margin:1rem 0rem 1.5rem 0rem;
   @include breakpoint(medium) {
-    margin-bottom:4rem;
+    margin:1.75rem 0rem 2rem 0rem;
   }
 }
 

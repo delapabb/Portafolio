@@ -11,11 +11,12 @@
 
 ?>
 
+		</div><!-- .site-padding -->
+	</div><!-- #content -->
+
 	<div class="top-link text-center show-for-small-only">
 		<a href="#" class="icon" ></a>
 	</div>
-
-	</div><!-- #content -->
 
 	<!-- #colophon
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -31,6 +32,5 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-</div><!-- .column .row wrapper -->
 </body>
 </html>

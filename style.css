@@ -2614,14 +2614,19 @@ select[multiple] {
 }
 
 /* Layout */
-body {
-  padding: 1rem 0.5rem;
+.site-padding {
+  padding: 0rem 0.5rem;
 }
 
 @media print, screen and (min-width: 40em) {
-  body {
-    padding: 1rem;
+  .site-padding {
+    padding: 0rem 1rem;
   }
+}
+
+#content {
+  padding: 1.25rem 0rem;
+  background: #ffffff;
 }
 
 .page-title {
@@ -2638,7 +2643,7 @@ body {
 }
 
 .top-link {
-  margin: 1rem 0rem;
+  margin: 2rem 0rem;
 }
 
 .top-link .icon {
@@ -2774,12 +2779,12 @@ body {
 /* Basic */
 /* Site Branding */
 .site-branding {
-  margin-bottom: 2rem;
+  margin: 1rem 0rem 1.5rem 0rem;
 }
 
 @media print, screen and (min-width: 40em) {
   .site-branding {
-    margin-bottom: 4rem;
+    margin: 1.75rem 0rem 2rem 0rem;
   }
 }
 
