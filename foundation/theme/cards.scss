@@ -5,6 +5,16 @@
 		border-bottom:8px solid rgba(0,0,0,0.03);
 		border-top-right-radius: 35px;
 		overflow:hidden;
+		&:hover {
+			background:rgba(0,0,0,0.125);
+		}
+		&:hover > .button, &:active > .button, &:focus > .button {
+			background:$secondary-color;
+			color:$black;
+			&:after {
+		  		content: url(images/cta-arrow-over.svg);
+			}
+		}
 		.project-details {
 			margin-bottom:1.8rem;
 			padding:1rem;
@@ -31,5 +41,8 @@
 			padding:1rem 1rem 1rem 1rem;
 			margin-bottom:0rem;
 		}
+	}
+	a {
+		color:$black;
 	}
 }

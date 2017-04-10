@@ -2565,6 +2565,19 @@ select[multiple] {
   overflow: hidden;
 }
 
+.card-grid .card:hover {
+  background: rgba(0, 0, 0, 0.125);
+}
+
+.card-grid .card:hover > .button, .card-grid .card:active > .button, .card-grid .card:focus > .button {
+  background: #ffc000;
+  color: #444444;
+}
+
+.card-grid .card:hover > .button:after, .card-grid .card:active > .button:after, .card-grid .card:focus > .button:after {
+  content: url(images/cta-arrow-over.svg);
+}
+
 .card-grid .card .project-details {
   margin-bottom: 1.8rem;
   padding: 1rem;
@@ -2594,6 +2607,10 @@ select[multiple] {
   height: auto;
   padding: 1rem 1rem 1rem 1rem;
   margin-bottom: 0rem;
+}
+
+.card-grid a {
+  color: #444444;
 }
 
 /* Layout */
