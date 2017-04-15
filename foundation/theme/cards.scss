@@ -1,13 +1,8 @@
 .card-grid {
 	.card {
 		position:relative;
-		background:rgba(0,0,0,0.1);
-		border-bottom:8px solid rgba(0,0,0,0.03);
-		overflow:hidden;
-		&:hover {
-			background:rgba(0,0,0,0.125);
-		}
-		&:hover > .button, &:active > .button, &:focus > .button {
+		background:#222222;
+		&:hover > .project-details .button {
 			background:$secondary-color;
 			color:$black;
 			&:after {
@@ -15,9 +10,10 @@
 			}
 		}
 		.project-details {
-			margin-bottom:1.8rem;
 			padding:1rem;
 			.title {
+				padding-bottom:0.75rem;
+				border-bottom:1px solid $dark-gray;
 				font-size: 1.25rem;
 				font-weight: 300;
 				text-transform: capitalize;
@@ -30,15 +26,6 @@
 			.tools {
 				font-style:italic;
 			}
-		}
-		.button {
-			position:absolute;
-			bottom:0;
-			left:0;
-			width:100%;
-			height:auto;
-			padding:1rem 1rem 1rem 1rem;
-			margin-bottom:0rem;
 		}
 	}
 	a {

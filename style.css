@@ -2559,30 +2559,25 @@ select[multiple] {
 
 .card-grid .card {
   position: relative;
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 8px solid rgba(0, 0, 0, 0.03);
-  overflow: hidden;
+  background: #222222;
 }
 
-.card-grid .card:hover {
-  background: rgba(0, 0, 0, 0.125);
-}
-
-.card-grid .card:hover > .button, .card-grid .card:active > .button, .card-grid .card:focus > .button {
+.card-grid .card:hover > .project-details .button {
   background: #ffc000;
   color: #444444;
 }
 
-.card-grid .card:hover > .button:after, .card-grid .card:active > .button:after, .card-grid .card:focus > .button:after {
+.card-grid .card:hover > .project-details .button:after {
   content: url(images/cta-arrow-over.svg);
 }
 
 .card-grid .card .project-details {
-  margin-bottom: 1.8rem;
   padding: 1rem;
 }
 
 .card-grid .card .project-details .title {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #999999;
   font-size: 1.25rem;
   font-weight: 300;
   text-transform: capitalize;
@@ -2596,16 +2591,6 @@ select[multiple] {
 
 .card-grid .card .project-details .tools {
   font-style: italic;
-}
-
-.card-grid .card .button {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  padding: 1rem 1rem 1rem 1rem;
-  margin-bottom: 0rem;
 }
 
 .card-grid a {
@@ -2625,7 +2610,7 @@ select[multiple] {
 
 #content {
   padding: 1.25rem 0rem;
-  background: #333;
+  background: #333333;
   color: #ffffff;
 }
 

@@ -46,9 +46,9 @@
 			<?php
 			endif; ?>
 
-		</div>
+			<span class="button round">See This Project</span>
 
-		<span class="button">See This Project</span>
+		</div>
 
 	</article><!-- #post-## -->
 
