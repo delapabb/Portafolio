@@ -2593,10 +2593,6 @@ select[multiple] {
   font-style: italic;
 }
 
-.card-grid .card .project-details .label, .card-grid .card .project-details .client, .card-grid .card .project-details .tools {
-  color: #cacaca;
-}
-
 .card-grid .card .project-details .cta {
   border-top: 1px solid #444444;
   padding-top: 1.25rem;
