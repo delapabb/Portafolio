@@ -2577,7 +2577,7 @@ select[multiple] {
 
 .card-grid .card .project-details .title {
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid #444444;
   font-size: 1.25rem;
   font-weight: 300;
   text-transform: capitalize;
@@ -2591,6 +2591,15 @@ select[multiple] {
 
 .card-grid .card .project-details .tools {
   font-style: italic;
+}
+
+.card-grid .card .project-details .label, .card-grid .card .project-details .client, .card-grid .card .project-details .tools {
+  color: #cacaca;
+}
+
+.card-grid .card .project-details .cta {
+  border-top: 1px solid #444444;
+  padding-top: 1.25rem;
 }
 
 .card-grid a {

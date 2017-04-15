@@ -36,7 +36,7 @@
 
 			if( !empty( $client ) ) : ?>
 				<p class="label">Client</p>
-				<p><?php echo $client ?></p>
+				<p class="client"><?php echo $client ?></p>
 			<?php
 			endif;
 
@@ -46,7 +46,9 @@
 			<?php
 			endif; ?>
 
-			<span class="button round">See This Project</span>
+			<div class="cta">
+				<span class="button round">See This Project</span>
+			</div>
 
 		</div>
 

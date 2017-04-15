@@ -13,7 +13,7 @@
 			padding:1rem;
 			.title {
 				padding-bottom:0.75rem;
-				border-bottom:1px solid $dark-gray;
+				border-bottom:1px solid #444444;
 				font-size: 1.25rem;
 				font-weight: 300;
 				text-transform: capitalize;
@@ -25,6 +25,13 @@
 			}
 			.tools {
 				font-style:italic;
+			}
+			.label, .client, .tools {
+				color:$medium-gray;
+			}
+			.cta {
+				border-top:1px solid #444444;
+				padding-top:1.25rem;
 			}
 		}
 	}
