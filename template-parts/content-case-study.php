@@ -15,48 +15,45 @@
 	</header><!-- .entry-header -->
 
 	<div class="summary">
-		<div class="row">
-			<div class="small-12 medium-6 medium-push-6 large-5 large-push-7 columns panel">
-				<div class="featured-image">
+
+		<div class="featured-image">
+			<?php
+			if ( has_post_thumbnail() ) :
+				echo get_the_post_thumbnail( $post_id, 'full' );
+			else :
+				?><img src="http://placehold.it/1200x900?text=Select+A+Featured+Image"><?php
+			endif;
+			?>
+		</div>
+
+		<div class="project-details">
+			<div class="objective">
+				<?php 
+
+					$summary = get_post_meta( get_the_ID(), 'summary', true );
+					$client = get_post_meta( get_the_ID(), 'client', true );
+					$tools = get_post_meta( get_the_ID(), 'tools', true );
+
+					if( !empty( $summary ) ) : ?>
+						<?php echo wpautop( $summary, true ); ?>
 					<?php
-					if ( has_post_thumbnail() ) :
-						echo get_the_post_thumbnail( $post_id, 'full' );
-					else :
-						?><img src="http://placehold.it/1200x900?text=Select+A+Featured+Image"><?php
 					endif;
-					?>
-				</div>
-			</div>
-			<div class="small-12 medium-6 medium-pull-6 large-7 large-pull-5 columns panel">
-				<div class="project-details">
-					<div class="objective">
-						<?php 
 
-							$summary = get_post_meta( get_the_ID(), 'summary', true );
-							$client = get_post_meta( get_the_ID(), 'client', true );
-							$tools = get_post_meta( get_the_ID(), 'tools', true );
+					if( !empty( $client ) ) : ?>
+						<p class="label">Client</p>
+						<p><?php echo $client ?></p>
+					<?php
+					endif;
 
-							if( !empty( $summary ) ) : ?>
-								<?php echo wpautop( $summary, true ); ?>
-							<?php
-							endif;
+					if( !empty( $tools ) ) : ?>
+						<p class="label">What I Executed</p>
+						<p class="tools"><?php echo $tools ?></p>
+					<?php
+					endif; ?>
 
-							if( !empty( $client ) ) : ?>
-								<p class="label">Client</p>
-								<p><?php echo $client ?></p>
-							<?php
-							endif;
-
-							if( !empty( $tools ) ) : ?>
-								<p class="label">What I Executed</p>
-								<p class="tools"><?php echo $tools ?></p>
-							<?php
-							endif; ?>
-
-					</div>
-				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="entry-content">

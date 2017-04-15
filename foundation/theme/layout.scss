@@ -44,36 +44,38 @@
 
 .case-study {
 	.entry-title {
+		margin-bottom:1.25rem;
 		text-transform:capitalize;
+		@include breakpoint(medium) {
+			margin-bottom:1.75rem;
+		}
 	}
 	.summary {
-		margin-bottom:1rem;
-		border-bottom:2px solid $secondary-color;
-		border-top-right-radius:2.8125rem;
-		background:rgba(0,0,0,0.03);
-		.panel {
-			.featured-image {
-				border-top-right-radius:2.1875rem;
-				overflow:hidden;
-			}
-			.project-details {
-				.objective {
-					padding:1rem 0rem 0rem 1.5rem;
-					.label {
-						margin:0rem;
-						font-weight:600;
-						text-transform:uppercase;
-					}
-					.tools {
-						font-style:italic;
-					}
+		margin-bottom:1.75rem;
+		.project-details {
+			border-bottom:1px solid #444444;
+			border-top:1px solid #444444;
+			padding:1.25rem 0rem 0.5rem 0rem;
+			margin:1.75rem 0rem 0rem 0rem;
+			.objective {
+				.label {
+					margin:0rem;
+					font-weight:600;
+					text-transform:uppercase;
+				}
+				.tools {
+					font-style:italic;
 				}
 			}
 		}
 	}
 	.entry-content {
-		margin-bottom:1rem;
-		border-bottom:2px solid rgba(0,0,0,0.1);
+		margin-bottom:2rem;
+		padding-bottom:1rem;
+		border-bottom:1px solid #444444;
+	}
+	p {
+		font-size:1.25rem;
 	}
 }
 

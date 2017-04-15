@@ -12,25 +12,36 @@ get_header(); ?>
 	<div id="primary" class="content-area column row">
 		<main id="main" class="site-main" role="main">
 
-		<?php
-		while ( have_posts() ) : the_post();
+			<div class="row">
 
-			get_template_part( 'template-parts/content', 'case-study' );
+				<div class="small-12 large-8 column">
 
-			the_post_navigation(
-				array (
-					'prev_text' => __( '<span class="button-left round">Previous</span>'),
-					'next_text' => __( '<span class="button round">Next</span>')
-				)
-			);
+					<?php
+					while ( have_posts() ) : the_post();
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+						get_template_part( 'template-parts/content', 'case-study' );
+							the_post_navigation(
+								array (
+									'prev_text' => __( '<span class="button-left round">Previous</span>'),
+									'next_text' => __( '<span class="button round">Next</span>')
+								)
+							); 
 
-		endwhile; // End of the loop.
-		?>
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) : 
+							comments_template(); 
+						endif;
+
+					endwhile; // End of the loop.
+					?>
+
+				</div>
+
+				<div class="small-12 large-4 column">
+					<!-- future sidebar -->
+				</div>
+
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
