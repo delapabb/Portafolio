@@ -14,8 +14,8 @@
 		</div><!-- .site-padding -->
 	</div><!-- #content -->
 
-	<div class="top-link text-center show-for-small-only">
-		<a href="#" class="icon" ></a>
+	<div class="top-link text-center">
+		<a href="#" class="icon show-for-small-only" ></a>
 	</div>
 
 	<!-- #colophon

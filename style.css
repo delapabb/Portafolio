@@ -2635,6 +2635,12 @@ select[multiple] {
   margin: 2rem 0rem;
 }
 
+@media print, screen and (min-width: 40em) {
+  .top-link {
+    margin: 4rem 0rem;
+  }
+}
+
 .top-link .icon {
   display: inline-block;
   height: 32px;

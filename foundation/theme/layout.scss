@@ -28,6 +28,9 @@
 
 .top-link {
 	margin:2rem 0rem;
+	@include breakpoint(medium) {
+		margin:4rem 0rem;
+	}
 	.icon {
 		display:inline-block;
 		height:32px;
