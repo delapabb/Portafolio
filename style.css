@@ -2561,7 +2561,6 @@ select[multiple] {
   position: relative;
   background: rgba(0, 0, 0, 0.1);
   border-bottom: 8px solid rgba(0, 0, 0, 0.03);
-  border-top-right-radius: 35px;
   overflow: hidden;
 }
 
@@ -2626,18 +2625,23 @@ select[multiple] {
 
 #content {
   padding: 1.25rem 0rem;
-  background: #ffffff;
+  background: #333;
+  color: #ffffff;
+}
+
+#content a {
+  color: #ffffff;
 }
 
 .page-title {
-  margin-bottom: 0.75rem;
+  margin: 0rem 0rem 1.25rem 0rem;
   font-weight: 300;
   font-size: 1.25rem;
 }
 
 @media print, screen and (min-width: 40em) {
   .page-title {
-    margin-bottom: 1rem;
+    margin: 1rem 0rem 2.25rem 0rem;
     font-size: 1.75rem;
   }
 }

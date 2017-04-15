@@ -9,15 +9,19 @@
 
 #content {
 	padding:1.25rem 0rem;
-	background:$white;
+	background:#333;
+	color:$white;
+	a {
+		color:$white;
+	}
 }
 
 .page-title {
-	margin-bottom:0.75rem;
+	margin:0rem 0rem 1.25rem 0rem;
 	font-weight:300;
 	font-size:1.25rem;
 	@include breakpoint(medium) {
-		margin-bottom:1rem;
+		margin:1rem 0rem 2.25rem 0rem;
 		font-size:1.75rem;
 	}
 }

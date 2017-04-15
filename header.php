@@ -78,7 +78,7 @@
 								<img class="icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter.svg" alt="Twitter">
 							</a>
 						<?php endif; ?>
-						<a class="button round" href="#">Hire Me</a>
+						<a class="button round" href="/wordpress/hire-me">Hire Me</a>
 					</div>
 
 				</div><!-- .site-branding -->
